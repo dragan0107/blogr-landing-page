@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600&family=Ubuntu:wght@400;500;700&display=swap');
 
+/* SOME GLOBAL SETTINGS */
+
 :root {
     --light-red: #ff525d;
     --very-light-red: #ff7a85;
@@ -10,6 +12,7 @@
     --footer-background: #25252d;
     --gradient-orange: #ff8870;
     --gradient-red: #ff4658;
+    --dark-blue: #3a3d5c;
 }
 
 * {
@@ -26,6 +29,9 @@ a {
     text-decoration: none;
 }
 
+
+/* -----------------------------TOP SECTION-----------------------------------------*/
+
 .topSection {
     background: center / contain no-repeat url('../images/bg-pattern-intro-desktop.svg'),linear-gradient(to right,var(--gradient-orange),var(--gradient-red));
     background-size: 200%;
@@ -41,7 +47,7 @@ a {
     width: 100%;
     flex-direction: row;
     height: auto;
-    /* justify-content: space-between; */
+
 }
 
 .nav-brand {
@@ -76,7 +82,7 @@ a {
     justify-content: start;
     align-items: baseline;
     width: 140%;
-    margin-left: 8em;
+    margin-left: 5%;
 }
 .leftLinks>li {
     margin: 1.2em;
@@ -93,8 +99,19 @@ a {
     margin: 1.2em;
 }
 
+.signUp {
+
+    height: 50px;
+    width: 140px;
+    padding: .7em 2em;
+    border-radius: 2.5rem;
+    margin: 0 1em;
+    background-color: var(--white-text);
+    color: var(--gradient-red);
+}
+
 .sloganBox {
-    margin: 3em;
+    margin: 5em 3em 3em;
     padding: 2em;
     display: flex;
     justify-content: center;
@@ -117,8 +134,24 @@ a {
 }
 
 .sloganButtons {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
+    font-weight: 600;
+}
+
+.startFreeBtn:hover {
+    background-color: transparent;
+    border: 1px solid var(--white-text);
+    color: var(--white-text);
+}
+
+.learnMoreBtn:hover {
+    background-color: var(--white-text);
+    color: var(--very-light-red);
+}
+.signUp:hover {
+    background-color: var(--gradient-orange);
+    color: var(--white-text);
 }
 
 .slogBtn {
@@ -127,9 +160,189 @@ a {
     align-items: center;
     height: 50px;
     width: 140px;
-    padding: .8em;
+    padding: .7em;
     border-radius: 2.5rem;
     margin: 0 1em;
     background-color: var(--white-text);
     color: var(--gradient-red);
+}
+
+.learnMoreBtn {
+    background: transparent;
+    color: var(--white-text);
+    border: 1px solid var(--white-text);
+}
+
+@media (max-width: 1170px) {
+    .links {
+        display: none;
+    }
+    .nav-brand {
+        font-size: 3.5rem;
+    }
+    .topSection {
+        padding: 3em .8em;
+    }
+    .sloganButtons {
+        flex-direction: column;
+    }
+    .slogBtn {
+        margin: .8em;
+    }
+
+    .sloganBox {
+        padding: 1em;
+    }
+    .sloganBox > h1 {
+        font-size: 2.2em;
+    }
+}
+
+/* ---------------------MIDDLE SECTION-------------------------- */
+
+.middleSection {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+}
+
+.mobileSize-laptop {
+    display: none;
+}
+
+.design {
+    display: flex;
+    padding: 3em 0em 3em 7em;
+}
+
+.designLeft {
+    width: 60%;
+    padding: 6em 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.designLeft > h1 {
+    font-size: 2.9em;
+    color: var(--dark-blue);
+    margin-left: 110%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.designRight {
+    width: 40%;
+    overflow: hidden;
+}
+.designRight > svg {
+    position: relative;
+    /* left: 10% */
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+.desc > p {
+    line-height: 2rem;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: var(--dark-grayish-blue);
+}
+
+.desc > h2 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    color: var(--dark-blue);
+}
+
+@media (max-width: 1485px) {
+    .designLeft {
+        padding: 3em 5em;
+    }
+}
+@media (max-width: 950px) {
+    .designLeft {
+        padding: 3em 5em;
+    }
+}
+
+@media (max-width: 730px) {
+    .design {
+        flex-direction: column;
+        text-align: center;
+        padding: 2em;
+    }
+    .designLeft {
+        width: 100%;
+        padding: 1.2em;
+    }
+    .designLeft > h1 {
+        margin-left: 0;
+        margin-bottom: 2em;
+        
+    }
+    .desc {
+        margin-bottom: 2em;
+    }
+    .designRight {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .editor-desktop {
+        display: none;
+    }
+
+    .designRight > svg {
+        /* transform: scale(1); */
+        object-fit: contain;
+    }
+    .mobileSize-laptop {
+        display: block;
+    }
+}
+
+/* -------------------------STATE OF THE ART-------------------------- */
+
+
+.stateOfArt {
+    display: flex;
+    padding: 0 10em;
+    background: url('/images/bg-pattern-circles.svg') left bottom / contain no-repeat;
+    background-size: 50%;
+    background-color: var(--dark-blue);
+    height: 430px;
+    border-radius: 0 120px;
+}
+
+.statePhones {
+    position: relative;
+    bottom: 10%;
+}
+
+.stateRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 11%;
+    color: var(--white-text);
+}
+.stateRight > h1 {
+    font-size: 2.9em;
+    margin-bottom: 1em;
+}
+
+.stateRight > p {
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 2em;
 }
