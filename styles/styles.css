@@ -436,5 +436,99 @@ a {
     .designLeft > h1 {
         font-size: 2.4em;
     }
+    .topSection {
+        background-size: 800%;
+    }
 
+    
+
+}
+
+/* --------------------------ABOUT PRODUCT SECTION------------------------------ */
+
+.aboutProduct {
+    display: flex;
+    padding: 5em 10em 5em 0;
+    margin-top: 3em;
+}
+.aboutImage {
+    position: relative;
+    right: 32%;
+}
+
+.aboutLeft {
+    width: 45%;
+}
+
+.aboutRight {
+    width: 55%;
+    padding: 7em 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: space-around; */
+}
+.aboutDesc {
+    margin-bottom: 4em;
+}
+
+.aboutDesc > h1 {
+    font-size: 2.3rem;
+    color: var(--dark-blue);
+    margin-bottom: .7em;
+}
+.aboutDesc > p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: var(--dark-grayish-blue);
+    line-height: 1.7rem;
+}
+
+@media (max-width: 1450px) {
+    .aboutProduct {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .aboutImage {
+        width: 700px;
+    }
+    .aboutRight {
+        padding: 3.5em 7em;
+    }
+}
+
+@media (max-width: 954px) {
+    .aboutProduct {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutImage {
+        width: 500px;
+        right: 0;
+    }
+    .aboutRight {
+        width: 100%;
+        text-align: center;
+    }
+    .aboutLeft {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 635px) {
+    .aboutRight {
+        padding: 2em 4em;
+    }
+
+    .aboutImage {
+        width: 331px;
+    }
+}
+
+@media (max-width: 400px) {
+    .aboutRight {
+        padding: 1em 1.5em;
+    }
 }
