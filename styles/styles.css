@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 /* SOME GLOBAL SETTINGS */
 
@@ -46,15 +46,16 @@ a {
     display: flex;
     width: 100%;
     flex-direction: row;
-    height: auto;
+    height: 66px;
 
 }
 
 .nav-brand {
     font-size: 2.7rem;
-    font-family: 'Overpass', sans-serif;
+    /* font-family: 'Overpass', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
     color: var(--white-text);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .links {
@@ -65,6 +66,9 @@ a {
     font-size: 1.1em;
     font-weight: 600;
     /* align-items: baseline; */
+}
+.standardLinks:hover {
+    border-bottom: 2px solid var(--white-text);
 }
 
 a {
@@ -440,6 +444,11 @@ a {
         background-size: 800%;
     }
 
+    .attribution {
+        flex-direction: column;
+        text-align: center;
+    }
+
     
 
 }
@@ -454,6 +463,10 @@ a {
 .aboutImage {
     position: relative;
     right: 32%;
+}
+
+.aboutImageMobile {
+    display: none;
 }
 
 .aboutLeft {
@@ -503,8 +516,11 @@ a {
         align-items: center;
     }
     .aboutImage {
-        width: 500px;
-        right: 0;
+        display: none;
+    }
+
+    .aboutImageMobile {
+        display: block;
     }
     .aboutRight {
         width: 100%;
@@ -522,13 +538,102 @@ a {
         padding: 2em 4em;
     }
 
-    .aboutImage {
-        width: 331px;
+    .aboutImageMobile {
+        width: 356px;
     }
 }
 
 @media (max-width: 400px) {
     .aboutRight {
         padding: 1em 1.5em;
+    }
+}
+
+/* ------------------------FOOTER------------------------- */
+
+.footer {
+    background-color: var(--footer-background);
+    border-radius: 0 85px 0 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 22em 5em 9em;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+.footerColumn {
+    line-height: 2em;
+    
+}
+.footerColumn > h3 {
+    line-height: 2em;
+    color: var(--white-text);
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.footerColumn > ul > li {
+    font-weight: 300;
+    font-size: .95em;
+}
+
+.footerColumn > ul > li:hover {
+    text-decoration: underline;
+}
+
+.attribution {
+    color: var(--footer-text);
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+@media (max-width: 995px) {
+    .footer {
+        padding: 4em 11em 4em 9em;
+    }
+}
+
+@media (max-width: 710px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footerBrand {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em;
+    }
+    .footerColumn {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.4em;
+        
+    }
+
+    .footerColumn > h3 {
+        font-size: 1.2em;
+    }
+    .footerColumn > ul > li {
+        font-size: 1em;
+    }
+
+    .attribution {
+        left: 15%;
+    }
+}
+
+@media (max-width: 400px) {
+    .attribution{
+        left: 29%;
+        
     }
 }
