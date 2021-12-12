@@ -29,12 +29,12 @@
       <div class="links">
         <ul class="leftLinks">
           <li class="standardLinks"><a href="#product">Product</a><i
-              class="fas fa-chevron-down"></i></li>
+              class="iconTop fas fa-chevron-down"></i></li>
           <li class="standardLinks"><a href="">Company</a><i
-              class="fas fa-chevron-down"></i></li>
+              class="iconTop fas fa-chevron-down"></i></li>
           <div class="connectBox connectLink">
             <li class="standardLinks"><a class="" href="">Connect</a><i
-                class="fas fa-chevron-down"></i></li>
+                class="iconTop fas fa-chevron-down"></i></li>
               <div class="dropdownConnect">
                 <ul>
                   <li>Contact</li>
@@ -50,6 +50,19 @@
         </ul>
       </div>
     </nav>
+    <div id="hamburger" class="hamburger" >
+      <img id="burgerImg" onclick="showMenu()" src="./images/icon-hamburger.svg" alt="">
+      <div id="burgerBox" class="burgerBox transparent">
+        <ul>
+          <li>Product</li><i
+          class="fas fa-chevron-down"></i>
+          <li>Company</li><i
+          class="fas fa-chevron-down"></i>
+          <li>Connect</li><i
+          class="fas fa-chevron-down"></i>
+        </ul>
+      </div>
+    </div>
     <div class="sloganBox">
       <h1>A modern publishing platform</h1>
       <p>Grow your audience and build your online brand</p>
@@ -180,7 +193,7 @@
     </div>
   </section>
 
-
+<script src="index.js"></script>
 </body>
 
 </html>
