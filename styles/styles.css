@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 /* SOME GLOBAL SETTINGS */
 
@@ -169,6 +169,39 @@ a {
     margin: 0 1em;
     background-color: var(--white-text);
     color: var(--gradient-red);
+}
+.connectBox {
+    position: relative;
+    height: 43px;
+}
+
+.dropdownConnect {
+    position: absolute;
+    display: none;
+    height: 150px;
+    width: 150px;
+    background-color: var(--white-text);
+    border-radius: 5px;
+    padding: 1.3em;
+    /* justify-content: center; */
+    align-items: center;
+    line-height: 2.15em;
+    margin-top: 20px;
+    font-size: .9em;
+    left: -30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownConnect > ul > li {
+    cursor: pointer;
+}
+
+.dropdownConnect > ul > li:hover{
+    font-weight: 900;
+}
+
+.connectBox:hover .dropdownConnect {
+        display: flex;
 }
 
 .learnMoreBtn {
@@ -589,9 +622,13 @@ a {
     bottom: 10px;
     display: flex;
 }
+.chall {
+    margin-right: 3px;
+}
 
 .underlined {
     text-decoration: underline;
+    margin-left: 3px;
 }
 
 @media (max-width: 995px) {
