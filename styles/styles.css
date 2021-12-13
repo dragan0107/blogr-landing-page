@@ -113,6 +113,7 @@ a {
     margin: 0 1em;
     background-color: var(--white-text);
     color: var(--gradient-red);
+    transition: all .3s ease;
 }
 
 .sloganBox {
@@ -142,6 +143,10 @@ a {
     margin-top: 1.5rem;
     display: flex;
     font-weight: 600;
+}
+
+.startFreeBtn {
+    transition: all .3s ease;
 }
 
 .startFreeBtn:hover {
@@ -209,6 +214,7 @@ a {
     background: transparent;
     color: var(--white-text);
     border: 1px solid var(--white-text);
+    transition: all .3s ease;
 }
 
 .hamburger {
@@ -261,6 +267,11 @@ a {
     padding: 10px 5px;
     line-height: 2.2em;
     display: none;
+    
+}
+
+.connectOptions > ul > li {
+    transition: all .3s ease;
 }
 
 .connectOptions > ul > li:hover {
@@ -279,6 +290,8 @@ a {
 
 .burgerBox > ul > li {
     line-height: 2.7em;
+    transition: all .3s ease;
+
 }
 
 .burgerBox > ul > li:hover {
@@ -290,8 +303,8 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-
 .buttonsMenu > a {
+    transition: all .3s ease;
     margin: 10px;
 }
 
@@ -784,6 +797,5 @@ a {
 @media (max-width: 400px) {
     .attribution{
         left: 29%;
-        
     }
 }
