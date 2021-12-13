@@ -35,13 +35,13 @@
           <div class="connectBox connectLink">
             <li class="standardLinks"><a class="" href="">Connect</a><i
                 class="iconTop fas fa-chevron-down"></i></li>
-              <div class="dropdownConnect">
-                <ul>
-                  <li>Contact</li>
-                  <li>Newsletter</li>
-                  <li>Linkedin</li>
-                </ul>
-              </div>
+            <div class="dropdownConnect">
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkedin</li>
+              </ul>
+            </div>
           </div>
         </ul>
         <ul class="registrationLinks">
@@ -50,17 +50,28 @@
         </ul>
       </div>
     </nav>
-    <div id="hamburger" class="hamburger" >
-      <img id="burgerImg" onclick="showMenu()" src="./images/icon-hamburger.svg" alt="">
+    <div id="hamburger" class="hamburger">
+      <img id="burgerImg" onclick="showMenu()" src="./images/icon-hamburger.svg"
+        alt="">
       <div id="burgerBox" class="burgerBox transparent">
         <ul>
-          <li>Product</li><i
-          class="fas fa-chevron-down"></i>
-          <li>Company</li><i
-          class="fas fa-chevron-down"></i>
-          <li>Connect</li><i
-          class="fas fa-chevron-down"></i>
+          <li>Product<i class="burgerIcons fas fa-chevron-down"></i></li>
+          <li>Company<i class="burgerIcons fas fa-chevron-down"></i></li>
+          <li onclick="toggleSubMenu()" >Connect<i class="burgerIcons fas fa-chevron-down"></i></li>
         </ul>
+        <div id="connectOptions" class="connectOptions">
+          <ul>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>Linkedin</li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="buttonsMenu">
+          <a class="loginBurger" href="">Login</a>
+          <a class="signupBurger" href="">Sign Up</a>
+        </div>
+
       </div>
     </div>
     <div class="sloganBox">
@@ -185,15 +196,15 @@
       </ul>
     </div>
     <div class="attribution">
-     <span class="chall">Challenge by </span><a class="underlined"
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"> Frontend Mentor </a>.
+      <span class="chall">Challenge by </span><a class="underlined"
+        href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor </a>.
       Coded by <a href="https://github.com/drip016/" target="_blank"> <span
           class="underlined"> drip016.</span></a>
     </div>
   </section>
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
