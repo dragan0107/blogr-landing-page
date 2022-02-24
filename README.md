@@ -5,7 +5,7 @@
 ## Blogr project (Challenge from [frontendmentor.io](https://www.frontendmentor.io/))
 
 - This is a landing page practice project, where I created a fully responsive page with plain HTML, CSS & JS.
-- The point of this challenge was to replicate the design, images, and instructions provided in the project description.
+- The point of this challenge was to replicate the design, with all the images and other assests provided.
 
 ## Page design.
 ![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)
